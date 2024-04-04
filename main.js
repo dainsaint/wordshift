@@ -49,7 +49,7 @@ const getRow = (y) => {
 
 const getColumn = (x) => {
   return Array.from(document.querySelectorAll(`.game-block--letter[data-x='${x}']:not(.is-fake)`))
-    .sort((a, b) => parseInt(a.dataset.x) - parseInt(b.dataset.x))
+    .sort((a, b) => parseInt(a.dataset.y) - parseInt(b.dataset.y))
 }
 
 const generatePuzzle = () => {
